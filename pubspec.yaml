@@ -1,0 +1,14 @@
+name: httputil
+version: 0.1.0
+license: MIT
+homepage: https://github.com/httputil/httputil.dart
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies:
+  meta: ^1.3.0
+  jetlog: ^1.0.0-rc.3
+
+dev_dependencies:
+  test: ^1.16.5
