@@ -8,7 +8,7 @@ void handler(HttpRequest req) => req.response
   ..close();
 
 Future<void> main() async {
-  await handler.listenAndServe(InternetAddress.loopbackIPv4, port: 3000);
+  await handler.listenAndServe(InternetAddress.loopbackIPv4, port: 3000, concurrency: 4);
 
   log.info('Running an HTTP server on http://localhost:3000/');
 }
